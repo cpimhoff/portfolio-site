@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.navigation_bar {
+	h1 {
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+	hr {
+		border: 0;
+	    height: 1px;
+		background: #333;
+	}
+	.items {
+		text-align: center;
+		a {
+			color: #696c6e;
+			transition: color 0.2s;
+			text-align: center;
+			&:hover {
+				color: black;
+			}
+		}
+	}
+}
+
+.navigation_bar.shrunk {
+
+	margin-top: 2em;
+	margin-bottom: 1em;
+	$text-size: 120%;
+
+	h1 {
+		font-size: $text-size;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+	hr {
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
+		margin-left: 20vw;
+		margin-right: 20vw;
+	}
+	.items a {
+		font-size: $text-size - 30%;
+		margin: 1em;
+	}
+
+}

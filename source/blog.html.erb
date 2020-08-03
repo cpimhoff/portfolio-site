@@ -1,0 +1,10 @@
+---
+title: Blog
+---
+ 
+<div class="listings">
+	<% blog.articles.each do |article| %>
+		<%= partial 'partials/postlisting', 
+			locals: { post: article } %>
+	<% end %>
+</div> 

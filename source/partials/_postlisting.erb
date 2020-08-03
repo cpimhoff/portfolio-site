@@ -1,0 +1,10 @@
+
+<div class="index_listing">
+	<h1>
+      <%= link_to post.title, post.url %>
+    </h1>
+	<p class="summary">
+		<%= post.data.description %>
+	</p>
+    <a class="read_more" href="<%= post.url %>">Read more</a>
+</div>

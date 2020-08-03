@@ -1,0 +1,24 @@
+<% button2Name ||= nil %>
+<% button2URL ||= nil %>
+
+<div class="index_listing">
+	<div class="row">
+		<div class="one columns">
+			<%= image_tag iconSource, class: "icon" %>
+		</div>
+		<div class="six columns">
+			<h1><%= name %></h1>
+			<p class="summary">
+				<%= summary %>
+			</p>
+		</div>
+
+		<div class="five columns">
+			<% if button2Name != nil %>
+				<a href="<%= button2URL %>" class="button u-pull-right"><%= button2Name %></a>
+			<% end %>
+			<a href="<%= button1URL %>" class="button u-pull-right"><%= button1Name %></a>
+		</div>
+		
+	</div>
+</div>
