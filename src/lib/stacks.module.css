@@ -1,0 +1,45 @@
+/* for containers */
+
+.hStack {
+  display: flex;
+  flex-direction: row;
+}
+
+.hStack div:not(:first-child) {
+  margin-left: 1.25em;
+}
+
+.vStack {
+  display: flex;
+  flex-direction: column;
+}
+
+.vStack div:not(:first-child) {
+  margin-top: 1.25em;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.spaced {
+  justify-content: space-between;
+}
+
+.alignBaseline {
+  align-items: baseline;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+/* for items */
+
+.grow {
+  flex-grow: 1;
+}
+
+.shrink {
+  flex-shrink: 1;
+}

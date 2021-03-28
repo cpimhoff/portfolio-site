@@ -1,0 +1,9 @@
+.circleCrop {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.bordered {
+  border: 5px solid black;
+}
