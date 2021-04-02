@@ -1,9 +1,0 @@
-
-<h1><%= tagname.capitalize %> posts</h1>
-
-<div class="listings">
-  <% articles.each do |article| %>
-    <%= partial 'partials/postlisting', 
-      locals: { post: article } %>
-  <% end %>
-</div>
