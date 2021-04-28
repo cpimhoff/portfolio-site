@@ -1,0 +1,7 @@
+.timelineDate {
+  color: rgb(204, 204, 204);
+}
+
+.timelineDate svg {
+  transform: rotate(90deg);
+}

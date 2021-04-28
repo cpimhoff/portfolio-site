@@ -1,0 +1,66 @@
+.navBar {
+  padding: 1em;
+  background-color: white;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.navBarContent {
+  margin: auto;
+  max-width: 40rem;
+}
+
+.title {
+  line-height: 1;
+  font-size: 3rem;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title,
+.subtitle {
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.subtitle a {
+  display: inline-block;
+}
+
+ul.contact {
+  font-size: 0.75rem;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul.contact li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 2pt;
+}
+
+ul.contact li svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+ul.contact li *:not(:first-child) {
+  margin-left: 0.5em;
+}
+
+ul.contact a {
+  transition: color 0.15s;
+  color: gray;
+  text-decoration: none;
+}
+
+ul.contact a:hover {
+  color: black;
+}

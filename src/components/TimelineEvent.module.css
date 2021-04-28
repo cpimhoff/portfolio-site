@@ -1,0 +1,43 @@
+.timelineEvent {
+  background-color: white;
+  border-radius: 3pt;
+  margin: 0.75rem 0;
+  border: 2px solid transparent;
+}
+
+.timelineEvent h1 {
+  font-size: 1rem;
+}
+
+.timelineEvent p {
+  margin: 0;
+}
+
+.timelineLink {
+  padding: 1rem;
+  cursor: pointer;
+  transition: border 0.15s;
+}
+
+.timelineLink:hover {
+  border: 2px solid rgb(238, 238, 238);
+}
+
+.timelineNoLink {
+  padding: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.eventDesc {
+  flex-basis: 200pt;
+  flex-grow: 1;
+}
+
+.eventIcon {
+  width: 50pt;
+}
+
+.eventIcon svg {
+  width: 50pt;
+  height: 50pt;
+}

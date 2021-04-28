@@ -1,64 +1,89 @@
 import React from 'react';
-import classnames from 'classnames';
-import { Phone, Mail, GitHub, Star, Briefcase } from 'react-feather';
-import Link from 'next/link';
+import Image from 'next/image';
+import { Briefcase } from 'react-feather';
 
 import styles from './index.module.css';
-import stacks from '../lib/stacks';
-import CharlieIcon from '../components/CharlieIcon';
+import TimelineEvent from '../components/TimelineEvent';
+import TimelineDate from '../components/TimelineDate';
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.card}>
-        <div className={classnames(stacks.hStack, stacks.alignCenter)}>
-          <CharlieIcon />
-          <div>
-            <h1 className={styles.title}>Charlie Imhoff</h1>
-            <p className={styles.subtitle}>
+      <div>
+        <TimelineDate>Now</TimelineDate>
+        <TimelineEvent icon={<Briefcase />} title={'Resume'} href="/resume">
+          My current professional experience.
+        </TimelineEvent>
+
+        {/*
+        TODO:
+        - Flatiron as a project
+        - Slants as a project
+        - Clayta as a project
+        - ChunkScript as a project
+        - DogGoat ?
+        */}
+
+        <TimelineEvent
+          icon={<Image src="/images/StoreIcon.png" height={100} width={100} />}
+          title="Print Shop"
+          href="https://store.cpimhoff.com"
+        >
+          Online store for my graphic and illustrative designs.
+        </TimelineEvent>
+
+        <TimelineEvent
+          title={
+            <>
               Senior Software Engineer at{' '}
-              <a href="https://flatiron.com">Flatiron Health</a>
-            </p>
-
-            <ul className={styles.contact}>
-              <a href="tel:6032904105">
-                <li>
-                  <Phone /> <span>(603) 290-4105</span>
-                </li>
+              <a
+                href="https://flatiron.com"
+                style={{ display: 'inline-block' }}
+              >
+                Flatiron Health
               </a>
-              <a href="mailto:cpimhoff@gmail.com">
-                <li>
-                  <Mail /> <span>cpimhoff@gmail.com</span>
-                </li>
-              </a>
-              <a href="https://github.com/cpimhoff/">
-                <li>
-                  <GitHub /> <span>cpimhoff</span>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </div>
+            </>
+          }
+        />
 
-      <br />
-      <br />
-      <br />
+        <TimelineDate>2021</TimelineDate>
 
-      <div className={stacks.hStack}>
-        <Link href="/projects">
-          <div className={classnames(stacks.vStack, stacks.alignCenter)}>
-            <Star />
-            <b>Projects</b>
-          </div>
-        </Link>
+        <TimelineEvent
+          icon={
+            <Image src="/images/tabula/AppIcon.png" height={100} width={100} />
+          }
+          title="Tabula"
+          href="/projects/tabula"
+        >
+          Tabula is a distraction free writing app for macOS and iOS which
+          automatically formats your text as you write.
+        </TimelineEvent>
 
-        <Link href="/resume">
-          <div className={classnames(stacks.vStack, stacks.alignCenter)}>
-            <Briefcase />
-            <b>Resume</b>
-          </div>
-        </Link>
+        <TimelineDate>2020</TimelineDate>
+        <TimelineDate>2019</TimelineDate>
+
+        <TimelineDate>2018</TimelineDate>
+        <TimelineEvent title={<>Short-lived stand up comedy career</>} />
+
+        <TimelineEvent
+          title={
+            <>
+              Graduation from{' '}
+              <a href="https://carleton.edu">Carleton College</a>
+            </>
+          }
+        />
+
+        <TimelineEvent
+          icon={<Image src="/images/prairie.png" height={100} width={100} />}
+          title="Prairie"
+          href="https://cs.carleton.edu/cs_comps/1617/jondich2/final-results/index.html"
+        >
+          Toolkit for historians to create interactive experiences in Unity.
+          Developed for senior project and awarded distinction.
+        </TimelineEvent>
+
+        <TimelineDate>2017</TimelineDate>
       </div>
     </div>
   );

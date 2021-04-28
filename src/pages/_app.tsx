@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '../../styles/globals.css';
+import NavBar from '../components/NavBar';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,7 +10,20 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Component {...pageProps} />
+      <div>
+        <NavBar />
+
+        <div
+          style={{
+            maxWidth: '39rem',
+            margin: 'auto',
+            padding: '1rem',
+            paddingTop: 0,
+          }}
+        >
+          <Component {...pageProps} />
+        </div>
+      </div>
     </div>
   );
 }

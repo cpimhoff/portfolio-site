@@ -5,17 +5,13 @@
   flex-direction: row;
 }
 
-.hStack div:not(:first-child) {
-  margin-left: 1.25em;
-}
-
 .vStack {
   display: flex;
   flex-direction: column;
 }
 
-.vStack div:not(:first-child) {
-  margin-top: 1.25em;
+.wrappable {
+  flex-wrap: wrap;
 }
 
 .centered {
@@ -35,6 +31,20 @@
 }
 
 /* for items */
+
+.hStack.mediumSpacing > * {
+  margin: 0.5em;
+}
+.vStack.mediumSpacing > * {
+  margin: 0.5em;
+}
+
+.hStack.minorSpacing > * {
+  margin: 0.1em;
+}
+.vStack.minorSpacing > * {
+  margin: 0.1em;
+}
 
 .grow {
   flex-grow: 1;
