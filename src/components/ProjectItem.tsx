@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import classnames from 'classnames';
 
-import styles from './TimelineEvent.module.css';
+import styles from './ProjectItem.module.css';
 import stacks from '../lib/stacks.module.css';
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
   children?: ReactNode;
   href?: string;
 };
-export default function TimelineEvent({
+export default function ProjectItem({
   icon = '',
   title,
   children,
@@ -22,10 +22,7 @@ export default function TimelineEvent({
   return (
     <WrapperComponent href={href}>
       <div
-        className={classnames(
-          styles.timelineEvent,
-          href ? styles.timelineLink : styles.timelineNoLink
-        )}
+        className={classnames(styles.projectItem, href && styles.projectLink)}
       >
         <div
           className={classnames(
@@ -35,8 +32,8 @@ export default function TimelineEvent({
             stacks.wrappable
           )}
         >
-          <div className={styles.eventIcon}>{icon}</div>
-          <div className={classnames(styles.eventDesc)}>
+          <div className={styles.projectIcon}>{icon}</div>
+          <div className={classnames(styles.projectDesc)}>
             <b>{title}</b>
             <p>{children}</p>
           </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/Image';
 import classnames from 'classnames';
 
 import FullWidth from './FullWidth';
@@ -8,18 +7,20 @@ import stacks from '../lib/stacks.module.css';
 export default function TabulaBanner() {
   return (
     <FullWidth>
-      <div style={{ height: 450, overflow: 'hidden' }}>
-        <Image
-          src="/images/tabula/DesktopDublin.jpg"
-          layout="fill"
-          objectFit="cover"
-        />
-
+      <div
+        style={{
+          height: 450,
+          width: '100%',
+          overflow: 'hidden',
+          backgroundImage: 'url(/images/tabula/DesktopDublin.jpg)',
+          objectFit: 'cover',
+        }}
+      >
         <div
           className={classnames(stacks.hStack, stacks.centered)}
           style={{ position: 'relative', top: 125 }}
         >
-          <Image
+          <img
             src="/images/tabula/Hero.png"
             width={1485 * 0.2}
             height={808 * 0.2}
@@ -30,7 +31,7 @@ export default function TabulaBanner() {
           className={classnames(stacks.hStack, stacks.centered)}
           style={{ position: 'relative', top: 200 }}
         >
-          <Image
+          <img
             src="/images/tabula/BlankDocument.gif"
             width={1677 * 0.4}
             height={1028 * 0.4}

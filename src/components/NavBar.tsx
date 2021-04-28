@@ -29,7 +29,7 @@ export default function NavBar() {
             </p>
           </div>
 
-          <CharlieIcon scale={0.5} />
+          <CharlieIcon scale={0.7} />
 
           <ul className={styles.contact}>
             <a href="tel:6032904105">

@@ -1,43 +1,38 @@
-.timelineEvent {
+.projectItem {
   background-color: white;
   border-radius: 3pt;
   margin: 0.75rem 0;
   border: 2px solid transparent;
 }
 
-.timelineEvent h1 {
+.projectItem h1 {
   font-size: 1rem;
 }
 
-.timelineEvent p {
+.projectItem p {
   margin: 0;
 }
 
-.timelineLink {
+.projectLink {
   padding: 1rem;
   cursor: pointer;
   transition: border 0.15s;
 }
 
-.timelineLink:hover {
+.projectLink:hover {
   border: 2px solid rgb(138, 138, 138);
 }
 
-.timelineNoLink {
-  padding: 0 1rem;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.eventDesc {
+.projectDesc {
   flex-basis: 200pt;
   flex-grow: 1;
 }
 
-.eventIcon {
+.projectIcon {
   width: 50pt;
 }
 
-.eventIcon svg {
+.projectIcon svg {
   width: 50pt;
   height: 50pt;
 }

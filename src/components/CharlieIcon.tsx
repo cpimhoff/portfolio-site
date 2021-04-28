@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/Image';
 import classnames from 'classnames';
 
 import styles from './CharlieIcon.module.css';
@@ -29,7 +28,7 @@ export default function CharlieIcon({
         className
       )}
     >
-      <Image src="/images/charlie.jpg" width={width} height={height} />
+      <img src="/images/charlie.jpg" width={width} height={height} />
     </div>
   );
 }
