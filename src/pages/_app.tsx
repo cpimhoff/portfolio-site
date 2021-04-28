@@ -2,6 +2,8 @@ import Head from 'next/head';
 import '../../styles/globals.css';
 import NavBar from '../components/NavBar';
 
+import 'video-react/dist/video-react.css';
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>

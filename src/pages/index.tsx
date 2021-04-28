@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/Image';
 import { Briefcase } from 'react-feather';
 
 import styles from './index.module.css';
@@ -10,8 +10,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div>
-        <TimelineDate>Now</TimelineDate>
-        <TimelineEvent icon={<Briefcase />} title={'Resume'} href="/resume">
+        <TimelineEvent
+          icon={<Briefcase />}
+          title={'Resume'}
+          href="/assets/resume2021.pdf"
+        >
           My current professional experience.
         </TimelineEvent>
 
@@ -46,8 +49,6 @@ export default function Home() {
           }
         />
 
-        <TimelineDate>2021</TimelineDate>
-
         <TimelineEvent
           icon={
             <Image src="/images/tabula/AppIcon.png" height={100} width={100} />
@@ -59,10 +60,17 @@ export default function Home() {
           automatically formats your text as you write.
         </TimelineEvent>
 
-        <TimelineDate>2020</TimelineDate>
-        <TimelineDate>2019</TimelineDate>
+        <TimelineEvent
+          icon={
+            <Image src="/images/slants/AppIcon.png" height={100} width={100} />
+          }
+          title="Slants"
+          href="/projects/slants"
+        >
+          Slants is a fast paced arcade game for iOS designed to be straight
+          forward and challenging.
+        </TimelineEvent>
 
-        <TimelineDate>2018</TimelineDate>
         <TimelineEvent title={<>Short-lived stand up comedy career</>} />
 
         <TimelineEvent
@@ -82,8 +90,6 @@ export default function Home() {
           Toolkit for historians to create interactive experiences in Unity.
           Developed for senior project and awarded distinction.
         </TimelineEvent>
-
-        <TimelineDate>2017</TimelineDate>
       </div>
     </div>
   );

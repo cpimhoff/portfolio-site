@@ -21,9 +21,7 @@ export default function NavBar() {
         >
           <div className={styles.name}>
             <h1 className={styles.title}>
-              <Link href="/" as="a">
-                Charlie Imhoff
-              </Link>
+              <Link href="/">Charlie Imhoff</Link>
             </h1>
             <p className={styles.subtitle}>
               Senior Software Engineer at{' '}
