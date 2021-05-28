@@ -58,6 +58,14 @@ export default function Home() {
         </ProjectItem>
 
         <ProjectItem
+          icon={<img src="/images/chunk-script.svg" height={60} width={60} />}
+          title="ChunkScript"
+          href="https://chunkscript.cpimhoff.com"
+        >
+          A satirical homepage of a fictional programming language.
+        </ProjectItem>
+
+        <ProjectItem
           icon={<img src="/images/slants/AppIcon.png" height={60} width={60} />}
           title="Slants"
           href="/projects/slants"
