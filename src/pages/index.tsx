@@ -14,9 +14,20 @@ export default function Home() {
         <ProjectItem
           icon={<Briefcase />}
           title={'Resume'}
-          href="/assets/resume2021.pdf"
+          href="/assets/resume.pdf"
         >
           My current professional experience.
+        </ProjectItem>
+
+        <ProjectItem
+          icon={
+            <img src="/images/glean/GleanLogo.png" height={60} width={60} />
+          }
+          href="/projects/glean"
+          title="Software Engineer at Glean"
+        >
+          One of the founding engineers currently building Gleanʼs first
+          version.
         </ProjectItem>
 
         <ProjectItem
@@ -28,15 +39,6 @@ export default function Home() {
         >
           Tech lead for data quality on clinical abstraction team.
         </ProjectItem>
-
-        {/*
-        TODO:
-        - Flatiron as a project
-        - Slants as a project
-        - Clayta as a project
-        - ChunkScript as a project
-        - DogGoat ?
-        */}
 
         <ProjectHeader>Independent Projects</ProjectHeader>
 

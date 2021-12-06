@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           style={{
             maxWidth: '39rem',
             margin: 'auto',
+            marginBottom: '10em',
             padding: '1rem',
             paddingTop: 0,
           }}
