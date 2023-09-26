@@ -21,13 +21,16 @@ export default function Home() {
 
         <ProjectItem
           icon={
-            <img src="/images/glean/GleanLogo.png" height={60} width={60} />
+            <img
+              src="/images/hashboard/HashboardLogo.svg"
+              height={60}
+              width={60}
+            />
           }
-          href="/projects/glean"
-          title="Software Engineer at Glean"
+          href="/projects/hashboard"
+          title="Software Engineer at Hashboard"
         >
-          One of the founding engineers currently building Gleanʼs first
-          version.
+          One of the founding engineers at Hashboard.
         </ProjectItem>
 
         <ProjectItem
