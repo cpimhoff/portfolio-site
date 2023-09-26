@@ -24,7 +24,7 @@ export default function NavBar() {
               <Link href="/">Charlie Imhoff</Link>
             </h1>
             <p className={styles.subtitle}>
-              Software Engineer at <a href="https://glean.io">Glean</a>
+              Software Engineer at <a href="https://www.hashboard.com">Hashboard</a>
             </p>
           </div>
 
